@@ -1,1 +1,20 @@
 @import "tailwindcss";
+
+@theme {
+	--font-display: "Satoshi", "sans-serif";
+	--breakpoint-3xl: 1920px;
+
+	/* Base Colors */
+	--color-neutral-100: #e0dedc;
+	--color-neutral-200: #ffffff;
+
+	/* Transparent/Opacity Variations */
+	--color-transparent: rgba(0, 0, 0, 0); /* #000000, 0% opacity */
+	--color-black-10: rgba(0, 0, 0, 0.1); /* #000000, 10% opacity */
+	--color-gray-50: rgba(179, 179, 179, 0.5); /* #b3b3b3, 50% opacity */
+
+	/* Easing */
+	--ease-fluid: cubic-bezier(0.3, 0, 0, 1);
+	--ease-snappy: cubic-bezier(0.2, 0, 0, 1);
+	/* ... */
+}
