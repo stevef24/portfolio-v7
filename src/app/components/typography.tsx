@@ -9,7 +9,7 @@ export function H1({ children, className, ...props }: TypographyProps) {
 	return (
 		<h1
 			className={cn(
-				"font-poppins text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl",
+				"prose-h1 text-4xl font-bold tracking-tight sm:text-4xl md:text-6xl lg:text-7xl prose-headings:mx-auto prose-headings:max-w-3xl",
 				className
 			)}
 			{...props}
@@ -23,7 +23,7 @@ export function H2({ children, className, ...props }: TypographyProps) {
 	return (
 		<h2
 			className={cn(
-				"font-poppins text-3xl font-semibold tracking-tight sm:text-4xl md:text-5xl",
+				"prose-h2  text-3xl font-semibold tracking-tight sm:text-4xl md:text-5xl prose-headings:mx-auto prose-headings:max-w-3xl",
 				className
 			)}
 			{...props}
@@ -37,7 +37,7 @@ export function H3({ children, className, ...props }: TypographyProps) {
 	return (
 		<h3
 			className={cn(
-				"font-poppins text-2xl font-semibold tracking-tight sm:text-3xl md:text-4xl",
+				"prose-h3  text-2xl font-semibold tracking-tight sm:text-3xl md:text-4xl prose-headings:mx-auto prose-headings:max-w-3xl",
 				className
 			)}
 			{...props}
@@ -51,7 +51,7 @@ export function H4({ children, className, ...props }: TypographyProps) {
 	return (
 		<h4
 			className={cn(
-				"font-poppins text-xl font-semibold tracking-tight sm:text-2xl md:text-3xl",
+				"prose-h4  text-xl font-semibold tracking-tight sm:text-2xl md:text-3xl prose-headings:mx-auto prose-headings:max-w-3xl",
 				className
 			)}
 			{...props}
@@ -65,7 +65,7 @@ export function H5({ children, className, ...props }: TypographyProps) {
 	return (
 		<h5
 			className={cn(
-				"font-poppins text-lg font-medium tracking-tight sm:text-xl md:text-2xl",
+				"prose-h5  text-lg font-medium tracking-tight sm:text-xl md:text-2xl prose-headings:mx-auto prose-headings:max-w-3xl",
 				className
 			)}
 			{...props}
@@ -75,11 +75,25 @@ export function H5({ children, className, ...props }: TypographyProps) {
 	);
 }
 
+export function H6({ children, className, ...props }: TypographyProps) {
+	return (
+		<h6
+			className={cn(
+				"prose-h6  text-base font-medium tracking-tight sm:text-lg md:text-xl prose-headings:mx-auto prose-headings:max-w-3xl",
+				className
+			)}
+			{...props}
+		>
+			{children}
+		</h6>
+	);
+}
+
 export function P({ children, className, ...props }: TypographyProps) {
 	return (
 		<p
 			className={cn(
-				"font-poppins text-base leading-7 [&:not(:first-child)]:mt-6",
+				"prose-p  text-xl leading-7 [&:not(:first-child)]:mt-6 prose-p:mx-auto prose-p:max-w-3xl",
 				className
 			)}
 			{...props}
@@ -91,7 +105,7 @@ export function P({ children, className, ...props }: TypographyProps) {
 
 export function Caption({ children, className, ...props }: TypographyProps) {
 	return (
-		<p className={cn("font-poppins text-sm text-muted", className)} {...props}>
+		<p className={cn("prose-sm  text-sm text-muted", className)} {...props}>
 			{children}
 		</p>
 	);
@@ -99,7 +113,7 @@ export function Caption({ children, className, ...props }: TypographyProps) {
 
 export function SmallPrint({ children, className, ...props }: TypographyProps) {
 	return (
-		<p className={cn("font-poppins text-xs text-muted", className)} {...props}>
+		<p className={cn("prose-xs  text-xs text-muted", className)} {...props}>
 			{children}
 		</p>
 	);

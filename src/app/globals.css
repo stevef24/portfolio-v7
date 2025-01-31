@@ -1,20 +1,41 @@
 @import "tailwindcss";
 
+:root {
+	--color-1: 0 100% 63%;
+	--color-2: 270 100% 63%;
+	--color-3: 210 100% 63%;
+	--color-4: 195 100% 63%;
+	--color-5: 90 100% 63%;
+}
+
 @theme {
-	--font-display: "Satoshi", "sans-serif";
-	--breakpoint-3xl: 1920px;
+	--color-background: hsl(0 0% 3.9%);
+	--color-foreground: hsl(0 0% 98%);
+	--text-color: hsl(30 6% 87%);
 
-	/* Base Colors */
-	--color-neutral-100: #e0dedc;
-	--color-neutral-200: #ffffff;
+	--color-card: hsl(0 0% 3.9%);
+	--color-card-foreground: hsl(0 0% 98%);
 
-	/* Transparent/Opacity Variations */
-	--color-transparent: rgba(0, 0, 0, 0); /* #000000, 0% opacity */
-	--color-black-10: rgba(0, 0, 0, 0.1); /* #000000, 10% opacity */
-	--color-gray-50: rgba(179, 179, 179, 0.5); /* #b3b3b3, 50% opacity */
+	--color-popover: hsl(0 0% 3.9%);
+	--color-popover-foreground: hsl(0 0% 98%);
 
-	/* Easing */
-	--ease-fluid: cubic-bezier(0.3, 0, 0, 1);
-	--ease-snappy: cubic-bezier(0.2, 0, 0, 1);
-	/* ... */
+	--color-secondary: hsl(0 0% 14.9%);
+	--color-secondary-foreground: hsl(0 0% 98%);
+
+	--color-muted: hsl(0 0% 14.9%);
+	--color-muted-foreground: hsl(0 0% 63.9%);
+
+	--color-accent: hsl(0 0% 14.9%);
+	--color-accent-foreground: hsl(0 0% 98%);
+
+	--color-destructive: hsl(0 62.8% 30.6%);
+
+	--color-border: hsl(0 0% 14.9%);
+	--color-input: hsl(0 0% 14.9%);
+
+	--color-chart-1: hsl(220 70% 50%);
+	--color-chart-2: hsl(160 60% 45%);
+	--color-chart-3: hsl(30 80% 55%);
+	--color-chart-4: hsl(280 65% 60%);
+	--color-chart-5: hsl(340 75% 55%);
 }
