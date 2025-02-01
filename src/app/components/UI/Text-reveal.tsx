@@ -1,15 +1,30 @@
 "use client";
 
-import { motion, MotionValue, useScroll, useTransform } from "motion/react";
-import { ComponentPropsWithoutRef, FC, ReactNode, useRef } from "react";
+import {
+	motion,
+	type MotionValue,
+	useScroll,
+	useTransform,
+} from "framer-motion";
+import {
+	type ComponentPropsWithoutRef,
+	type FC,
+	type ReactNode,
+	useRef,
+} from "react";
 
 import { cn } from "@/lib/utils";
 
 export interface TextRevealProps extends ComponentPropsWithoutRef<"div"> {
 	text: string;
+	highlightWords: string[];
 }
 
-export const TextReveal: FC<TextRevealProps> = ({ text, className }) => {
+export const TextReveal: FC<TextRevealProps> = ({
+	text,
+	highlightWords,
+	className,
+}) => {
 	const targetRef = useRef<HTMLDivElement | null>(null);
 
 	const { scrollYProgress } = useScroll({
@@ -34,7 +49,12 @@ export const TextReveal: FC<TextRevealProps> = ({ text, className }) => {
 						const start = i / words.length;
 						const end = start + 1 / words.length;
 						return (
-							<Word key={i} progress={scrollYProgress} range={[start, end]}>
+							<Word
+								key={i}
+								progress={scrollYProgress}
+								range={[start, end]}
+								isHighlighted={highlightWords.includes(word)}
+							>
 								{word}
 							</Word>
 						);
@@ -49,19 +69,26 @@ interface WordProps {
 	children: ReactNode;
 	progress: MotionValue<number>;
 	range: [number, number];
+	isHighlighted: boolean;
 }
 
-const Word: FC<WordProps> = ({ children, progress, range }) => {
+const Word: FC<WordProps> = ({ children, progress, range, isHighlighted }) => {
 	const opacity = useTransform(progress, range, [0, 1]);
 	return (
 		<span className="xl:lg-3 relative mx-1 lg:mx-2.5">
 			<span className={"absolute opacity-30"}>{children}</span>
 			<motion.span
 				style={{ opacity: opacity }}
-				className={"text-black dark:text-[var(--text-color)]"}
+				className={cn(
+					"text-black dark:text-white",
+					isHighlighted &&
+						"bg-gradient-to-r from-yellow-300 to-lime-400 bg-clip-text text-transparent"
+				)}
 			>
 				{children}
 			</motion.span>
 		</span>
 	);
 };
+
+export default TextReveal;
