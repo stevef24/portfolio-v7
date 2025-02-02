@@ -1,35 +1,38 @@
 {
-	"name": "portfolio-v7",
-	"version": "0.1.0",
-	"private": true,
-	"scripts": {
-		"dev": "next dev",
-		"build": "next build",
-		"start": "next start",
-		"lint": "next lint"
-	},
-	"dependencies": {
-		"@tailwindcss/postcss": "^4.0.0",
-		"fumadocs-ui": "15.0.1",
-		"fumadocs-core": "15.0.1",
-		"fumadocs-mdx": "11.4.0",
-		"motion": "^12.0.6",
-		"next": "15.1.6",
-		"postcss": "^8.5.1",
-		"react": "^19.0.0",
-		"react-dom": "^19.0.0",
-		"react-icons": "^5.4.0",
-		"tailwindcss": "^4.0.0",
-		"zod": "^3.24.1"
-	},
-	"devDependencies": {
-		"@eslint/eslintrc": "^3",
-		"@tailwindcss/typography": "^0.5.16",
-		"@types/node": "^20",
-		"@types/react": "^19",
-		"@types/react-dom": "^19",
-		"eslint": "^9",
-		"eslint-config-next": "15.1.6",
-		"typescript": "^5"
-	}
+  "name": "portfolio-v.7.0",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "start": "next start",
+    "postinstall": "fumadocs-mdx"
+  },
+  "dependencies": {
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "fumadocs-core": "15.0.1",
+    "fumadocs-mdx": "11.4.0",
+    "fumadocs-ui": "15.0.1",
+    "lucide-react": "^0.474.0",
+    "motion": "^12.0.6",
+    "next": "15.1.6",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwind-merge": "^3.0.1",
+    "tailwindcss-animate": "^1.0.7",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.0.2",
+    "@types/mdx": "^2.0.13",
+    "@types/node": "22.13.0",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "eslint": "^8",
+    "eslint-config-next": "15.1.6",
+    "postcss": "^8.5.1",
+    "tailwindcss": "^4.0.2",
+    "typescript": "^5.7.3"
+  }
 }
