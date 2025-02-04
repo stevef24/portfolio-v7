@@ -3,8 +3,6 @@
 import UnicornScene from "@/app/helpers/Unicorn-studio";
 import { motion } from "motion/react";
 
-import Image from "next/image";
-
 interface BlogCardProps {
 	title: string;
 	description: string;
@@ -19,7 +17,6 @@ interface BlogCardProps {
 export default function BlogCard({
 	title,
 	description,
-	author,
 	projectId,
 }: BlogCardProps) {
 	return (
