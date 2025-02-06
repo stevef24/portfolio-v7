@@ -10,7 +10,7 @@ const Hero = () => {
 					projectId="d6NmYRniU96egHKFVFip"
 					height={"100%"}
 					width={"100%"}
-					className="absolute inset-0 z-20 object-cover "
+					className="absolute inset-0"
 				/>
 				<H1 className="absolute z-10 w-full text-center -translate-x-1/2 translate-y-20 top-1/2 left-1/2 text-balance text-foreground">
 					STAV FERNANDES

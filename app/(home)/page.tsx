@@ -6,7 +6,7 @@ import Contact from "@/components/landing/Contact";
 
 const Home = () => {
 	return (
-		<main className="max-w-5xl mx-auto">
+		<main >
 			<Hero />
 			<About />
 			<Blog />
