@@ -1,6 +1,7 @@
 "use client";
 
 import UnicornScene from "@/app/helpers/Unicorn-studio";
+import { ArrowRightIcon } from "lucide-react";
 import { motion } from "motion/react";
 
 import Image from "next/image";
@@ -19,13 +20,12 @@ interface BlogCardProps {
 export default function BlogCard({
 	title,
 	description,
-	author,
 	projectId,
 }: BlogCardProps) {
 	return (
 		<motion.div
 			transition={{ type: "spring", stiffness: 300, damping: 20 }}
-			className="w-full"
+			className="w-full cursor-pointer group"
 		>
 			<article className="relative w-full h-full min-h-[400px] overflow-hidden border-b border-[bg-muted-foreground] border-b-dashed text-muted-foreground">
 				<UnicornScene
@@ -34,6 +34,7 @@ export default function BlogCard({
 					projectId={projectId}
 					className="absolute inset-0 z-10 w-full h-full object-cover"
 				/>
+				<div className="absolute inset-0 z-20 bg-gradient-to-b from-black via-transparent to-black" />
 				<div className="absolute inset-10 z-20">
 					<div className="flex items-center justify-between">
 						<motion.h2
@@ -55,6 +56,12 @@ export default function BlogCard({
 					>
 						{description}
 					</motion.p>
+				</div>
+				<div className="absolute bottom-10 right-10 z-20 flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+					<p className="text-muted-foreground">
+						Read more
+					</p>
+					<ArrowRightIcon className="w-6 h-6" />
 				</div>
 			</article>
 		</motion.div>
