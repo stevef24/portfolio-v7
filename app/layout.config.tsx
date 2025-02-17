@@ -8,7 +8,7 @@ export const baseOptions: BaseLayoutProps = {
   disableThemeSwitch: true,
   links: [
     {
-      text: 'Blog',
+      text: 'Posts',
       url: '/blog',
       active: 'nested-url',
     },

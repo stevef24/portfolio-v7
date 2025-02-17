@@ -123,6 +123,7 @@ export default function UnicornScene({
 			data-us-alttext={altText}
 			data-us-arialabel={ariaLabel}
 			data-us-lazyload={lazyLoad ? "true" : ""}
+			data-us-production
 		>
 			{error && <div className="text-red-500">{error}</div>}
 		</div>
