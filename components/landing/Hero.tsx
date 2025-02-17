@@ -7,7 +7,7 @@ const Hero = () => {
 		<div className=" h-full max-w-5xl mx-auto">
 			<div className="bg-background relative max-w-5xl max-sm:border-none border-l border-r border-dashed border-[bg-muted-foreground] mx-auto h-[calc(100vh-65px)]">
 				<UnicornScene
-					projectId="d6NmYRniU96egHKFVFip"
+					projectId="vVcJwHr42rgJ3tzA2Kba"
 					height={"100%"}
 					width={"100%"}
 					className="absolute inset-0"
