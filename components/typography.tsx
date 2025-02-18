@@ -93,7 +93,7 @@ export function P({ children, className, ...props }: TypographyProps) {
 	return (
 		<p
 			className={cn(
-				"prose-p  text-xl leading-7 [&:not(:first-child)]:mt-6 prose-p:mx-auto prose-p:max-w-3xl",
+				"prose-p  text-xl leading-7 [&:not(:first-child)]:mt-6 prose-p:mx-auto prose-p:max-w-3xl text-fd-muted-foreground",
 				className
 			)}
 			{...props}

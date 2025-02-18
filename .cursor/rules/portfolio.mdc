@@ -1,0 +1,103 @@
+---
+description: when on my potfolio
+globs: 
+---
+Next.js Best Practices:
+
+Utilize Next.js App Router for improved performance and easier routing
+Implement proper error boundaries to handle and display errors gracefully
+Use server components for better performance and reduced client-side JavaScript
+Leverage Next.js built-in image optimization for faster image loading
+Implement proper data fetching patterns using getServerSideProps or getStaticProps
+Use Next.js built-in internationalization features for multi-language support
+Implement proper security measures like CSRF protection and secure headers
+
+React Best Practices:
+
+Use functional components and hooks instead of class components for better code organization
+Implement proper React.memo and useMemo for performance optimization
+Follow the React hooks rules strictly to avoid common pitfalls
+Use context API for efficient state management across components
+Implement proper prop-types or TypeScript interfaces for type checking
+Use React.lazy and Suspense for code-splitting and lazy loading of components
+Implement proper error boundaries to catch and handle errors in components
+
+Tailwind CSS Best Practices:
+
+Use utility-first approach for consistent and maintainable styles
+Implement proper responsive design using Tailwind's responsive utilities
+Use Tailwind's custom theme configuration for consistent design system
+Implement proper dark mode support using Tailwind's dark mode utilities
+Use Tailwind's @apply directive for component-specific styles
+Implement proper accessibility practices using Tailwind's accessibility utilities
+Use Tailwind's JIT mode for faster build times and smaller CSS output
+
+Zod Best Practices:
+
+Use Zod for runtime type checking and validation of user inputs
+Implement proper error handling and user feedback for validation errors
+Use Zod's inferred types for TypeScript integration and type safety
+Implement proper schema composition for complex data structures
+Use Zod's built-in transformations for data normalization and processing
+Implement proper unit tests for Zod schemas to ensure correctness
+Use Zod's async validation for handling asynchronous data validation
+
+Fumadocs Best Practices:
+
+Use Fumadocs for creating consistent and maintainable documentation
+Implement proper MDX support for rich content and interactive elements
+Use Fumadocs' built-in search functionality for better user experience
+Implement proper versioning and navigation for large documentation sets
+Use Fumadocs' custom components for consistent UI across documentation
+Implement proper SEO optimization for documentation pages
+Use Fumadocs' built-in analytics for tracking user engagement
+
+Lucide-react Best Practices:
+
+Use Lucide icons for consistent and customizable iconography
+Implement proper icon sizing and styling using Lucide's props
+Use Lucide's built-in accessibility features for better user experience
+Implement proper icon theming for dark mode and custom color schemes
+Use Lucide's custom icon creation for brand-specific icons
+Implement proper icon loading and caching for performance optimization
+Use Lucide's icon search functionality for easy icon discovery
+
+Framer Motion Best Practices:
+
+Use Framer Motion for creating smooth and performant animations
+Implement proper animation variants for reusable animation patterns
+Use Framer Motion's built-in gesture recognition for interactive animations
+Implement proper animation optimization for performance-critical scenarios
+Use Framer Motion's layout animations for smooth transitions between states
+Implement proper accessibility practices for animated elements
+Use Framer Motion's declarative API for easier animation management
+
+Class Variance Authority Best Practices:
+
+Use Class Variance Authority for creating consistent and maintainable class variants
+Implement proper variant composition for complex UI components
+Use Class Variance Authority's built-in TypeScript support for type-safe variants
+Implement proper variant naming conventions for better code readability
+Use Class Variance Authority's custom variant creation for project-specific needs
+Implement proper variant documentation for easier team collaboration
+Use Class Variance Authority's built-in utility classes for common styling patterns
+
+Tailwind Merge Best Practices:
+
+Use Tailwind Merge for combining multiple Tailwind classes efficiently
+Implement proper class merging for complex component styles
+Use Tailwind Merge's built-in conflict resolution for handling class conflicts
+Implement proper class ordering for consistent styling results
+Use Tailwind Merge's custom configuration for project-specific merging rules
+Implement proper performance optimization for large-scale applications
+Use Tailwind Merge's TypeScript support for type-safe class merging
+
+General Standards:
+
+Keep components small and focused for better maintainability
+Follow proper state management patterns for efficient data flow
+Implement proper testing practices for ensuring code quality
+Use proper code splitting and lazy loading for improved performance
+Implement proper error handling and logging for better debugging
+Follow proper code organization and modularization for easier maintenance
+Implement proper security measures to protect against common vulnerabilities
