@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { P } from "../typography";
 
 interface AuthorDisplayProps {
 	author: {

@@ -26,8 +26,8 @@ export default function MidCards({
 		<Link
 			href={href}
 			className={cn(
-				"block min-h-[200px] bg-black p-5  flex-col justify-end",
-				"border border-[bg-muted-foreground] transition-colors",
+				"block min-h-[200px]  p-5  flex-col justify-end",
+				"border border-dashed border-[bg-muted-foreground] transition-colors",
 				className
 			)}
 		>

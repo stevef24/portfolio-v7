@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { H3, P } from "../typography";
 import AuthorDisplay from "./AuthorDisplay";
+import WaveCards from "./WaveCards";
 
 interface FeatureCardProps {
 	tag?: string;
@@ -28,8 +29,8 @@ const FeatureCard = ({
 		<Link
 			href={href}
 			className={cn(
-				"group flex flex-col justify-between min-h-[400px] bg-black p-5",
-				"border border-[bg-muted-foreground] ",
+				"group flex flex-col justify-between min-h-[400px] gap-y-6 p-5 hover:bg-fd-muted/50 to  transition-all duration-300",
+				"border-dashed border-[bg-muted-foreground] ",
 				className
 			)}
 		>
@@ -40,11 +41,8 @@ const FeatureCard = ({
 			)}
 
 			<div className="space-y-4">
-				<H3 className="text-white group-hover:text-zinc-300 transition-colors">
-					{title}
-				</H3>
-				<P className="text-muted-foreground">{description}</P>
-
+				<H3>{title}</H3>
+				<p className="text-fd-muted-foreground">{description}</p>
 				<AuthorDisplay author={author} className="pt-4" />
 			</div>
 		</Link>
