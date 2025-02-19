@@ -1,9 +1,7 @@
-import Link from "next/link";
 import { blog } from "@/lib/source";
 import MidCards from "@/components/UI/MidCards";
-import FeatureCard from "@/components/UI/FeatureCard";
-import LongCard from "@/components/UI/LongCards";
 import LongCards from "@/components/UI/LongCards";
+import FeatureCard from "@/components/UI/featureCard";
 
 export default function Home() {
 	const posts = blog.getPages();
@@ -32,6 +30,7 @@ export default function Home() {
 							name: "Stav Fernandes",
 							image: "/images/profile.jpeg",
 						}}
+						className="md:border-l-0"
 					/>
 					<MidCards
 						title={"AI Agents"}
@@ -42,6 +41,7 @@ export default function Home() {
 							name: "Stav Fernandes",
 							image: "/images/profile.jpeg",
 						}}
+						className="md:border-l-0"
 					/>
 				</div>
 			</div>

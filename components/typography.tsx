@@ -9,7 +9,7 @@ export function H1({ children, className, ...props }: TypographyProps) {
 	return (
 		<h1
 			className={cn(
-				"prose-h1 text-4xl font-bold tracking-tight sm:text-4xl md:text-6xl lg:text-7xl prose-headings:mx-auto prose-headings:max-w-3xl",
+				"prose-h1 text-4xl font-bold tracking-tight sm:text-4xl md:text-6xl lg:text-7xl prose-headings:mx-auto prose-headings:max-w-3xl ",
 				className
 			)}
 			{...props}
@@ -37,7 +37,7 @@ export function H3({ children, className, ...props }: TypographyProps) {
 	return (
 		<h3
 			className={cn(
-				"prose-h3  text-2xl font-semibold tracking-tight sm:text-3xl md:text-4xl prose-headings:mx-auto prose-headings:max-w-3xl",
+				"prose-h3 text-fd-accent-foreground/85 text-2xl font-semibold tracking-tight sm:text-3xl md:text-4xl prose-headings:mx-auto prose-headings:max-w-3xl",
 				className
 			)}
 			{...props}
@@ -51,7 +51,7 @@ export function H4({ children, className, ...props }: TypographyProps) {
 	return (
 		<h4
 			className={cn(
-				"prose-h4  text-xl font-semibold tracking-tight sm:text-2xl md:text-3xl prose-headings:mx-auto prose-headings:max-w-3xl",
+				"prose-h4 text-fd-accent-foreground/85  text-xl font-semibold tracking-tight sm:text-2xl md:text-3xl prose-headings:mx-auto prose-headings:max-w-3xl",
 				className
 			)}
 			{...props}
@@ -65,7 +65,7 @@ export function H5({ children, className, ...props }: TypographyProps) {
 	return (
 		<h5
 			className={cn(
-				"prose-h5  text-lg font-medium tracking-tight sm:text-xl md:text-2xl prose-headings:mx-auto prose-headings:max-w-3xl",
+				"prose-h5 text-fd-accent-foreground/85  text-lg font-medium tracking-tight sm:text-xl md:text-2xl prose-headings:mx-auto prose-headings:max-w-3xl",
 				className
 			)}
 			{...props}
@@ -79,7 +79,7 @@ export function H6({ children, className, ...props }: TypographyProps) {
 	return (
 		<h6
 			className={cn(
-				"prose-h6  text-base font-medium tracking-tight sm:text-lg md:text-xl prose-headings:mx-auto prose-headings:max-w-3xl",
+				"prose-h6  text-fd-accent-foreground/85 text-base font-medium tracking-tight sm:text-lg md:text-xl prose-headings:mx-auto prose-headings:max-w-3xl",
 				className
 			)}
 			{...props}

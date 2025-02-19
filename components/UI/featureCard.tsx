@@ -29,13 +29,12 @@ const FeatureCard = ({
 		<Link
 			href={href}
 			className={cn(
-				"group flex flex-col justify-between min-h-[400px] gap-y-6 p-5 hover:bg-fd-muted/50 to  transition-all duration-300",
-				"border-dashed border-[bg-muted-foreground] ",
+				"group flex flex-col justify-between min-h-[400px] gap-y-6 p-5 hover:bg-fd-muted/50 to  transition-all duration-300 border border-dashed border-[bg-muted-foreground]",
 				className
 			)}
 		>
 			{tag && (
-				<span className="text-orange-500 text-sm font-medium uppercase tracking-wider">
+				<span className="primary-gradient text-sm font-medium uppercase tracking-wider">
 					{tag}
 				</span>
 			)}

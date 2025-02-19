@@ -3,3 +3,9 @@
 @import "fumadocs-ui/css/preset.css";
 
 @source '../node_modules/fumadocs-ui/dist/**/*.js';
+
+@layer utilities {
+	.primary-gradient {
+		@apply bg-gradient-to-r from-green-200 via-teal-400 to-cyan-600 text-transparent bg-clip-text;
+	}
+}

@@ -27,14 +27,12 @@ export default function MidCards({
 			href={href}
 			className={cn(
 				"block min-h-[200px]  p-5  flex-col justify-end",
-				"border border-dashed border-[bg-muted-foreground] transition-colors",
+				"border border-dashed border-[bg-muted-foreground] transition-colors hover:bg-fd-muted/50",
 				className
 			)}
 		>
 			<div className="max-w-3xl space-y-6">
-				<H4 className="text-white group-hover:text-zinc-300 transition-colors">
-					{title}
-				</H4>
+				<H4>{title}</H4>
 
 				<p className="text-fd-muted-foreground">{description}</p>
 

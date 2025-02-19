@@ -1,8 +1,8 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { InlineTOC } from "fumadocs-ui/components/inline-toc";
-import defaultMdxComponents from "fumadocs-ui/mdx";
 import { blog } from "@/lib/source";
+import customComponents from "@/lib/custom-components";
 
 export default async function Page(props: {
 	params: Promise<{ slug: string }>;
@@ -23,7 +23,7 @@ export default async function Page(props: {
 			<article className="container flex flex-col px-4 py-8">
 				<div className="min-w-0 prose">
 					<InlineTOC items={page.data.toc} />
-					<Mdx components={defaultMdxComponents} />
+					<Mdx components={customComponents} />
 				</div>
 				<div className="flex flex-col gap-4 text-sm">
 					<div>
