@@ -40,11 +40,11 @@ export default function BlogCard({
 					<div className="flex items-center justify-between">
 						<H4>{title}</H4>
 						<div className="z-20  items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-							<div className="flex items-center gap-2">
-								<P className=" text-center text-sm text-fd-muted-foreground">
+							<div className="flex items-center gap-1">
+								<P className=" text-center text-md text-fd-muted-foreground">
 									Read more
 								</P>
-								<ArrowRightIcon className="w-4 h-4" />
+								<ArrowRightIcon className="text-fd-muted-foreground w-4 h-4" />
 							</div>
 						</div>
 					</div>
