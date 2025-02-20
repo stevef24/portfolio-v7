@@ -79,11 +79,7 @@ const Word: FC<WordProps> = ({ children, progress, range, isHighlighted }) => {
 			<span className={"absolute opacity-30"}>{children}</span>
 			<motion.span
 				style={{ opacity: opacity }}
-				className={cn(
-					"dark:text-white",
-					isHighlighted &&
-						"text-gradient-to-r from-yellow-300 to-lime-400 bg-clip-text text-transparent"
-				)}
+				className={cn("dark:text-white", isHighlighted && "primary-gradient")}
 			>
 				{children}
 			</motion.span>

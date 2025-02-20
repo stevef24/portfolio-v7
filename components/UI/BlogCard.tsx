@@ -5,6 +5,7 @@ import { ArrowRightIcon } from "lucide-react";
 import { motion } from "motion/react";
 
 import Image from "next/image";
+import { H2, H4, P } from "../typography";
 
 interface BlogCardProps {
 	title: string;
@@ -37,31 +38,20 @@ export default function BlogCard({
 				<div className="absolute inset-0 z-20 bg-gradient-to-b from-black via-transparent to-black" />
 				<div className="absolute inset-10 z-20">
 					<div className="flex items-center justify-between">
-						<motion.h2
-							initial={{ opacity: 0, y: 20 }}
-							animate={{ opacity: 1, y: 0 }}
-							className="text-2xl font-bold leading-tight tracking-tight"
-						>
-							{title}
-						</motion.h2>
+						<H4>{title}</H4>
+						<div className="z-20  items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+							<div className="flex items-center gap-2">
+								<P className=" text-center text-sm text-fd-muted-foreground">
+									Read more
+								</P>
+								<ArrowRightIcon className="w-4 h-4" />
+							</div>
+						</div>
 					</div>
 				</div>
 
 				<div className="absolute bottom-10 left-10 z-20">
-					<motion.p
-						initial={{ opacity: 0, y: 10 }}
-						animate={{ opacity: 1, y: 0 }}
-						transition={{ delay: 0.1 }}
-						className="text-muted-foreground"
-					>
-						{description}
-					</motion.p>
-				</div>
-				<div className="absolute bottom-10 right-10 z-20 flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-					<p className="text-muted-foreground">
-						Read more
-					</p>
-					<ArrowRightIcon className="w-6 h-6" />
+					<P className="text-fd-muted-foreground">{description}</P>
 				</div>
 			</article>
 		</motion.div>

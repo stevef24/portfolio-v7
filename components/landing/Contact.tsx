@@ -10,7 +10,7 @@ const Contact = () => {
 			<div className="p-5 flex flex-col items-center justify-center gap-8 min-h-[calc(100vh-20rem)] py-20 text-center border border-dashed border-t-muted-foreground">
 				<H3>Want to connect?</H3>
 
-				<P>
+				<P className="text-balance text-fd-muted-foreground">
 					I&apos;m always open to new opportunities and collaborations. Feel
 					free to reach out through email or connect with me on LinkedIn.
 				</P>
