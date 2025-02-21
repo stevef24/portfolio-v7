@@ -1,6 +1,6 @@
 import React from "react";
 import PageHeader from "./PageHeader";
-import BlogCard from "../UI/BlogCard";
+import BlogCard from "../ui/BlogCard";
 
 const Blog = () => {
 	return (

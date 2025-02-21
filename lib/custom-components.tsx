@@ -10,14 +10,9 @@ import { Step, Steps } from "fumadocs-ui/components/steps";
 import { Tab, Tabs } from "fumadocs-ui/components/tabs";
 import { TypeTable } from "fumadocs-ui/components/type-table";
 import { Pre, CodeBlock } from "fumadocs-ui/components/codeblock";
-import {
-	DocsPage,
-	DocsDescription,
-	DocsTitle,
-	DocsBody,
-} from "fumadocs-ui/page";
 import { Heading } from "fumadocs-ui/components/heading";
-
+import CompilerComparison from "@/components/ui/blog/react-complier/compiler-comparison";
+import FlowDiagram from "@/components/ui/blog/react-server-component/FlowDiagram";
 const customComponents = {
 	...defaultMdxComponents,
 	Accordion,
@@ -43,10 +38,8 @@ const customComponents = {
 	h4: (props: any) => <Heading as="h4" {...props} />,
 	h5: (props: any) => <Heading as="h5" {...props} />,
 	h6: (props: any) => <Heading as="h6" {...props} />,
-	DocsPage,
-	DocsDescription,
-	DocsTitle,
-	DocsBody,
+	CompilerComparison,
+	FlowDiagram,
 };
 
 export default customComponents;

@@ -1,7 +1,7 @@
 import { blog } from "@/lib/source";
-import MidCards from "@/components/UI/MidCards";
-import LongCards from "@/components/UI/LongCards";
-import FeatureCard from "@/components/UI/featureCard";
+import { MidCard } from "@/components/ui/MidCards";
+import { LongCard } from "@/components/ui/LongCards";
+import { FeatureCard } from "@/components/ui/featureCard";
 
 export default function Home() {
 	const posts = blog.getPages();
@@ -21,7 +21,7 @@ export default function Home() {
 					}}
 				/>
 				<div>
-					<MidCards
+					<MidCard
 						title={"AI Agents"}
 						description={
 							"AI agents are a new way to build apps. They are a type of agent that can be used to build apps."
@@ -32,7 +32,7 @@ export default function Home() {
 						}}
 						className="md:border-l-0"
 					/>
-					<MidCards
+					<MidCard
 						title={"AI Agents"}
 						description={
 							"AI agents are a new way to build apps. They are a type of agent that can be used to build apps."
@@ -47,7 +47,7 @@ export default function Home() {
 			</div>
 			<div>
 				<ul>
-					<LongCards
+					<LongCard
 						title={"Build any LLM app in TypeScript with Vercel's AI SDK"}
 						description={"Build any LLM app in TypeScript with Vercel's AI SDK"}
 						author={{
@@ -57,7 +57,7 @@ export default function Home() {
 						date={"2024-01-01"}
 						link={"/blog/ai-agents"}
 					/>
-					<LongCards
+					<LongCard
 						title={"Build any LLM app in TypeScript with Vercel's AI SDK"}
 						description={"Build any LLM app in TypeScript with Vercel's AI SDK"}
 						author={{
@@ -67,7 +67,7 @@ export default function Home() {
 						date={"2024-01-01"}
 						link={"/blog/ai-agents"}
 					/>
-					<LongCards
+					<LongCard
 						title={"Build any LLM app in TypeScript with Vercel's AI SDK"}
 						description={"Build any LLM app in TypeScript with Vercel's AI SDK"}
 						author={{
@@ -77,7 +77,7 @@ export default function Home() {
 						date={"2024-01-01"}
 						link={"/blog/ai-agents"}
 					/>
-					<LongCards
+					<LongCard
 						title={"Build any LLM app in TypeScript with Vercel's AI SDK"}
 						description={"Build any LLM app in TypeScript with Vercel's AI SDK"}
 						author={{

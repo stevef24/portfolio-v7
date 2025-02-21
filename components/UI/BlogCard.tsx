@@ -4,8 +4,7 @@ import UnicornScene from "@/app/helpers/Unicorn-studio";
 import { ArrowRightIcon } from "lucide-react";
 import { motion } from "motion/react";
 
-import Image from "next/image";
-import { H2, H4, P } from "../typography";
+import { H4, P } from "../typography";
 
 interface BlogCardProps {
 	title: string;
@@ -28,7 +27,7 @@ export default function BlogCard({
 			transition={{ type: "spring", stiffness: 300, damping: 20 }}
 			className="w-full cursor-pointer group"
 		>
-			<article className="relative w-full h-full min-h-[400px] overflow-hidden border-b border-[bg-muted-foreground] border-b-dashed text-muted-foreground">
+			<article className="relative w-full h-full min-h-[400px] overflow-hidden border-b border-[bg-fd-muted-foreground] border-dashed text-fd-muted-foreground">
 				<UnicornScene
 					height="400px"
 					width="100%"
@@ -39,9 +38,9 @@ export default function BlogCard({
 				<div className="absolute inset-10 z-20">
 					<div className="flex items-center justify-between">
 						<H4>{title}</H4>
-						<div className="z-20  items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+						<div className="z-20 items-center gap-2 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-200">
 							<div className="flex items-center gap-1">
-								<P className=" text-center text-md text-fd-muted-foreground">
+								<P className="text-center text-md text-fd-muted-foreground">
 									Read more
 								</P>
 								<ArrowRightIcon className="text-fd-muted-foreground w-4 h-4" />

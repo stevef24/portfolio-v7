@@ -3,6 +3,7 @@ import Link from "next/link";
 import { InlineTOC } from "fumadocs-ui/components/inline-toc";
 import { blog } from "@/lib/source";
 import customComponents from "@/lib/custom-components";
+import { Button } from "@/components/ui/button";
 
 export default async function Page(props: {
 	params: Promise<{ slug: string }>;
@@ -15,10 +16,12 @@ export default async function Page(props: {
 
 	return (
 		<>
-			<div className="container py-12 border rounded-xl md:px-8">
+			<div className="container py-12  rounded-xl md:px-8">
 				<h1 className="mb-2 text-3xl font-bold">{page.data.title}</h1>
 				<p className="mb-4 text-fd-muted-foreground">{page.data.description}</p>
-				<Link href="/blog">Back</Link>
+				<Button variant="outline" asChild>
+					<Link href="/blog">Back</Link>
+				</Button>
 			</div>
 			<article className="container flex flex-col px-4 py-8">
 				<div className="min-w-0 prose">

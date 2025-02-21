@@ -1,10 +1,14 @@
-import Image from "next/image";
 import Link from "next/link";
-import { cn } from "@/lib/utils";
-import { H4, P } from "../typography";
-import AuthorDisplay from "./AuthorDisplay";
+import {
+	Card,
+	CardContent,
+	CardFooter,
+	CardHeader,
+	CardTitle,
+} from "@/components/ui/card";
+import { AuthorDisplay } from "@/components/AuthorsDisplay";
 
-interface MidCardsProps {
+interface MidCardProps {
 	title: string;
 	description: string;
 	author: {
@@ -15,29 +19,26 @@ interface MidCardsProps {
 	className?: string;
 }
 
-export default function MidCards({
+export function MidCard({
 	title,
 	description,
 	author,
 	href = "#",
 	className,
-}: MidCardsProps) {
+}: MidCardProps) {
 	return (
-		<Link
-			href={href}
-			className={cn(
-				"block min-h-[200px]  p-5  flex-col justify-end",
-				"border border-dashed border-[bg-muted-foreground] transition-colors hover:bg-fd-muted/50",
-				className
-			)}
-		>
-			<div className="max-w-3xl space-y-6">
-				<H4>{title}</H4>
-
-				<p className="text-fd-muted-foreground">{description}</p>
-
-				<AuthorDisplay author={author} className="pt-4" />
-			</div>
+		<Link href={href} className={className}>
+			<Card className="border border-dashed rounded-none">
+				<CardHeader>
+					<CardTitle>{title}</CardTitle>
+				</CardHeader>
+				<CardContent>
+					<p className="text-muted-foreground">{description}</p>
+				</CardContent>
+				<CardFooter>
+					<AuthorDisplay author={author} />
+				</CardFooter>
+			</Card>
 		</Link>
 	);
 }

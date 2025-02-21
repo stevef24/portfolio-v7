@@ -1,9 +1,13 @@
-import { cn } from "@/lib/utils";
-import Image from "next/image";
+import {
+	Card,
+	CardContent,
+	CardFooter,
+	CardHeader,
+	CardTitle,
+} from "@/components/ui/card";
+import { AuthorDisplay } from "@/components/AuthorsDisplay";
+import { Badge } from "@/components/ui/Badge";
 import Link from "next/link";
-import { H3, P } from "../typography";
-import AuthorDisplay from "./AuthorDisplay";
-import WaveCards from "./WaveCards";
 
 interface FeatureCardProps {
 	tag?: string;
@@ -17,35 +21,32 @@ interface FeatureCardProps {
 	href?: string;
 }
 
-const FeatureCard = ({
+export function FeatureCard({
 	tag = "Featured Post",
 	title,
 	description,
 	author,
 	className,
 	href = "#",
-}: FeatureCardProps) => {
+}: FeatureCardProps) {
 	return (
-		<Link
-			href={href}
-			className={cn(
-				"group flex flex-col justify-between min-h-[400px] gap-y-6 p-5 hover:bg-fd-muted/50 to  transition-all duration-300 border border-dashed border-[bg-muted-foreground]",
-				className
-			)}
-		>
-			{tag && (
-				<span className="primary-gradient text-sm font-medium uppercase tracking-wider">
-					{tag}
-				</span>
-			)}
-
-			<div className="space-y-4">
-				<H3>{title}</H3>
-				<p className="text-fd-muted-foreground">{description}</p>
-				<AuthorDisplay author={author} className="pt-4" />
-			</div>
+		<Link href={href} className={className}>
+			<Card className="h-full flex flex-col border border-dashed rounded-none">
+				<CardHeader>
+					{tag && (
+						<Badge variant="secondary" className="mb-4">
+							{tag}
+						</Badge>
+					)}
+					<CardTitle>{title}</CardTitle>
+				</CardHeader>
+				<CardContent className="flex-grow">
+					<p className="text-muted-foreground">{description}</p>
+				</CardContent>
+				<CardFooter>
+					<AuthorDisplay author={author} />
+				</CardFooter>
+			</Card>
 		</Link>
 	);
-};
-
-export default FeatureCard;
+}
