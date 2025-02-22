@@ -28,13 +28,13 @@ export default async function Page(props: {
 					<InlineTOC items={page.data.toc} />
 					<Mdx components={customComponents} />
 				</div>
-				<div className="flex flex-col gap-4 text-sm">
-					<div>
-						<p className="mb-1 text-fd-muted-foreground">Written by</p>
+				<div className="flex items-center justify-between gap-4 text-sm border-t border-dashed border-muted-foreground mt-10 py-10">
+					<div className="flex items-center gap-2 justify-center">
+						<p className="text-fd-muted-foreground">Written by</p>
 						<p className="font-medium">{page.data.author}</p>
 					</div>
-					<div>
-						<p className="mb-1 text-sm text-fd-muted-foreground">At</p>
+					<div className="flex items-center gap-2">
+						<p className="text-sm text-fd-muted-foreground">At</p>
 						<p className="font-medium">
 							{new Date(page.data.date).toDateString()}
 						</p>
