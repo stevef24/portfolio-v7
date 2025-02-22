@@ -29,7 +29,7 @@ export function LongCard({
 }: LongCardProps) {
 	return (
 		<Link href={link} className={className}>
-			<Card className="h-full border border-dashed rounded-none">
+			<Card className="h-full border border-dashed rounded-none  transition-all hover:bg-fd-muted-foreground/5 duration-300">
 				<CardHeader>
 					<CardTitle className="line-clamp-1">{title}</CardTitle>
 				</CardHeader>

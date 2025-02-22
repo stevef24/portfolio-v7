@@ -28,7 +28,7 @@ export default async function Page(props: {
 					<InlineTOC items={page.data.toc} />
 					<Mdx components={customComponents} />
 				</div>
-				<div className="flex items-center justify-between gap-4 text-sm border-t border-dashed border-muted-foreground mt-10 py-10">
+				<div className="flex items-center justify-between gap-4 text-sm border-t border-dashed border-fd-muted-foreground mt-10 py-10">
 					<div className="flex items-center gap-2 justify-center">
 						<p className="text-fd-muted-foreground">Written by</p>
 						<p className="font-medium">{page.data.author}</p>

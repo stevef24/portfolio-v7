@@ -31,7 +31,7 @@ export function FeatureCard({
 }: FeatureCardProps) {
 	return (
 		<Link href={href} className={className}>
-			<Card className="h-full flex flex-col border border-dashed rounded-none">
+			<Card className="h-full flex flex-col border border-dashed rounded-none transition-all hover:bg-fd-muted-foreground/5 duration-300">
 				<CardHeader>
 					{tag && (
 						<Badge variant="secondary" className="mb-4">

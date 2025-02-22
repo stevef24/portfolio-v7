@@ -30,7 +30,7 @@ export default function Home() {
 							name: "Stav Fernandes",
 							image: "/images/profile.jpeg",
 						}}
-						className="md:border-l-0"
+						className="md:border-l-0 "
 					/>
 					<MidCard
 						title={"AI Agents"}

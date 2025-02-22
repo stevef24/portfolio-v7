@@ -28,7 +28,7 @@ export function MidCard({
 }: MidCardProps) {
 	return (
 		<Link href={href} className={className}>
-			<Card className="border border-dashed rounded-none">
+			<Card className="border border-dashed rounded-none  transition-all hover:bg-fd-muted-foreground/5 duration-300">
 				<CardHeader>
 					<CardTitle>{title}</CardTitle>
 				</CardHeader>
