@@ -36,6 +36,7 @@ const Blog = () => {
 					}}
 					date="2023-01-01"
 					projectId="VzcZVpiOIfumxV4NDHWm"
+					className="border-b-none"
 				/>
 			</div>
 		</div>

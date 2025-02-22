@@ -15,7 +15,7 @@ const Hero = () => {
 					<H1 className="absolute z-10 w-full text-center -translate-x-1/2  -translate-y-12 top-1/2 left-1/2 text-balance text-foreground">
 						STAV FERNANDES
 					</H1>
-					<H4 className=" absolute z-10 w-full text-center -translate-x-1/2 translate-y-2 sm:translate-y-10 top-1/2 left-1/2 text-balance text-foreground">
+					<H4 className=" absolute z-10 w-full text-center -translate-x-1/2 translate-y-2 sm:translate-y-10 top-1/2 left-1/2 font-thin">
 						AI Engineer
 					</H4>
 				</div>

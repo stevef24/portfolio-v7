@@ -5,6 +5,7 @@ import { ArrowRightIcon } from "lucide-react";
 import { motion } from "motion/react";
 
 import { H4, P } from "../typography";
+import { cn } from "@/lib/utils";
 
 interface BlogCardProps {
 	title: string;
@@ -15,17 +16,19 @@ interface BlogCardProps {
 	};
 	date: string;
 	projectId: string;
+	className?: string;
 }
 
 export default function BlogCard({
 	title,
 	description,
 	projectId,
+	className,
 }: BlogCardProps) {
 	return (
 		<motion.div
 			transition={{ type: "spring", stiffness: 300, damping: 20 }}
-			className="w-full cursor-pointer group"
+			className={cn("w-full cursor-pointer group", className)}
 		>
 			<article className="relative w-full h-full min-h-[400px] overflow-hidden border-b border-[bg-fd-muted-foreground] border-dashed text-fd-muted-foreground">
 				<UnicornScene

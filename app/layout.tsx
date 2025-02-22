@@ -1,16 +1,16 @@
 import "./global.css";
 import { RootProvider } from "fumadocs-ui/provider";
-import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 import type { ReactNode } from "react";
 
-const inter = Inter({
-	subsets: ["latin"],
+const DM_Sans = localFont({
+	src: "../public/fonts/DMSerifDisplay-Regular.ttf",
 });
 
 export default function Layout({ children }: { children: ReactNode }) {
 	return (
-		<html lang="en" className={inter.className} suppressHydrationWarning>
-			<body className="min-h-screen">
+		<html lang="en" className={DM_Sans.className} suppressHydrationWarning>
+			<body className="min-h-screen bg-black">
 				<RootProvider search={{ enabled: false }}>{children}</RootProvider>
 			</body>
 		</html>
