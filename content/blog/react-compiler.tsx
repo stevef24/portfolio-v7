@@ -3,6 +3,7 @@ title: "React 19 Compiler"
 description: "An in-depth exploration of React 19's new compiler, its benefits, and how it transforms React development"
 date: "2024-10-28"
 author: "Stav Fernandes"
+image: "/images/image-test.webp"
 ---
 
 ### Introduction

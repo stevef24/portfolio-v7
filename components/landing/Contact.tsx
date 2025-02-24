@@ -40,7 +40,7 @@ const Contact = () => {
 						className="hover:bg-muted-foreground/10"
 					>
 						<Link
-							href="https://linkedin.com/in/your-profile"
+							href="https://linkedin.com/in/stavfernandes24"
 							target="_blank"
 							rel="noopener noreferrer"
 						>

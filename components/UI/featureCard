@@ -10,7 +10,7 @@ import { Badge } from "@/components/ui/Badge";
 import Link from "next/link";
 import { Button } from "./button";
 import { ArrowRightIcon } from "lucide-react";
-
+import Image from "next/image";
 interface FeatureCardProps {
 	tag?: string;
 	title: string;
@@ -36,10 +36,11 @@ export function FeatureCard({
 			<Card className="h-full flex flex-col border border-dashed bg-black rounded-none group transition-all hover:bg-fd-muted-foreground/5 duration-300">
 				<CardHeader>
 					{tag && (
-						<Badge variant="secondary" className="mb-4">
-							{tag}
+						<Badge variant="outline" className="mb-4 py-2 px-4 rounded-full">
+							<span className="primary-gradient">{tag}</span>
 						</Badge>
 					)}
+
 					<CardTitle>{title}</CardTitle>
 				</CardHeader>
 				<CardContent className="flex-grow">
