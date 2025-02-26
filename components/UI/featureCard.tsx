@@ -10,7 +10,7 @@ import { Badge } from "@/components/ui/Badge";
 import Link from "next/link";
 import { Button } from "./button";
 import { ArrowRightIcon } from "lucide-react";
-import Image from "next/image";
+
 interface FeatureCardProps {
 	tag?: string;
 	title: string;
