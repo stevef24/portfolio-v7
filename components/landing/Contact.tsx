@@ -2,7 +2,6 @@ import PageHeader from "./PageHeader";
 import Link from "next/link";
 import { Mail, Linkedin } from "lucide-react";
 import { H3, P } from "../typography";
-import Aurora from "../ui/Aurora";
 import { Button } from "../ui/button";
 import UnicornScene from "@/app/helpers/Unicorn-studio";
 

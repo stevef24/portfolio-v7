@@ -11,8 +11,8 @@ const About = () => {
 			</div>
 			<div className="z-10 flex items-center justify-center border border-[bg-mu-f] border-dashed border-t-0 min-h-64 ">
 				<TextReveal
-					text="Hey, I’m Stav, a software engineer passionate about creating beautiful AI-powered experiences. I thrive on learning, growing, and collaborating with ambitious teams who push boundaries and chase bold ideas. I love bringing ideas to life through code and building things that make an impact. If you love building, experimenting, and thinking big (and different), get in touch!"
-					highlightWords={["learning,", "growing,", "collaborating"]}
+					text="Hey, I’m Stav, a software engineer who loves building AI-driven experiences. I’m all about learning, experimenting, and creating things that make an impact. Whether it’s pushing boundaries in frontend or bridging AI with great design, I enjoy turning bold ideas into reality. If you’re into building and exploring what’s next, let’s connect!"
+					highlightWords={["learning,", "experimenting,", "creating"]}
 				/>
 			</div>
 		</section>
