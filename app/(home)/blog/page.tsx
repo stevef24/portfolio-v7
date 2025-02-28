@@ -9,6 +9,7 @@ export default function Home() {
 	const posts = blog.getPages();
 	const [featured, ...otherPosts] = posts;
 	const [secondPost, thirdPost, ...remainingPosts] = otherPosts;
+	console.log(featured);
 
 	return (
 		<main className="grow container mx-auto px-4 py-8">
@@ -22,6 +23,7 @@ export default function Home() {
 							name: featured.data.author || "",
 							image: "/images/profile.jpeg",
 						}}
+						href={featured.url}
 					/>
 				)}
 				<div>
@@ -34,6 +36,7 @@ export default function Home() {
 								image: "/images/profile.jpeg",
 							}}
 							className="md:border-l-0"
+							href={secondPost.url}
 						/>
 					)}
 					{thirdPost && (
@@ -45,6 +48,7 @@ export default function Home() {
 								image: "/images/profile.jpeg",
 							}}
 							className="md:border-l-0"
+							href={thirdPost.url}
 						/>
 					)}
 				</div>

@@ -10,6 +10,7 @@ import { Badge } from "@/components/ui/Badge";
 import Link from "next/link";
 import { Button } from "./button";
 import { ArrowRightIcon } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 interface FeatureCardProps {
 	tag?: string;
@@ -32,7 +33,7 @@ export function FeatureCard({
 	href = "#",
 }: FeatureCardProps) {
 	return (
-		<Link href={href} className={className}>
+		<Link href={href} className={cn("cursor-pointer", className)}>
 			<Card className="h-full flex flex-col border border-dashed bg-black rounded-none group transition-all hover:bg-fd-muted-foreground/5 duration-300">
 				<CardHeader>
 					{tag && (
