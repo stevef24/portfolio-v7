@@ -1,7 +1,7 @@
 "use client";
 
 import { blog } from "@/lib/source";
-import { FeatureCard } from "@/components/ui/featureCard";
+import { FeatureCard } from "@/components/ui/FeatureCard";
 import { MidCard } from "@/components/ui/MidCards";
 import { LongCard } from "@/components/ui/LongCards";
 
