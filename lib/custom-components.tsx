@@ -1,4 +1,5 @@
-// @ts-nocheck
+//@typescript-eslint/no-explicit-any
+
 import defaultMdxComponents from "fumadocs-ui/mdx";
 import { Accordion, Accordions } from "fumadocs-ui/components/accordion";
 import { DynamicCodeBlock } from "fumadocs-ui/components/dynamic-codeblock";
