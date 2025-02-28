@@ -5,7 +5,7 @@ import {
 	type MotionValue,
 	useScroll,
 	useTransform,
-} from "framer-motion";
+} from "motion/react";
 import {
 	type ComponentPropsWithoutRef,
 	type FC,
