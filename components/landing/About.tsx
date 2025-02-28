@@ -1,5 +1,5 @@
 import { H2 } from "../typography";
-import { TextReveal } from "../ui/Text-reveal";
+import TextReveal from "../ui/Text-reveal";
 
 const About = () => {
 	return (
