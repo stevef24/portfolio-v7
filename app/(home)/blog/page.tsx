@@ -1,7 +1,9 @@
+"use client";
+
 import { blog } from "@/lib/source";
+import { FeatureCard } from "@/components/ui/featureCard";
 import { MidCard } from "@/components/ui/MidCards";
 import { LongCard } from "@/components/ui/LongCards";
-import { FeatureCard } from "@/components/ui/featureCard";
 
 export default function Home() {
 	const posts = blog.getPages();
