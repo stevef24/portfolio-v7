@@ -49,16 +49,16 @@ export default function BlogCard({
 							<H4>{title}</H4>
 							<div className="z-20 items-center gap-2 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-200">
 								<div className="flex items-center gap-1">
-									<P className="text-center text-md text-fd-muted-foreground">
+									<p className="hidden md:block text-center text-md text-fd-muted-foreground">
 										Read more
-									</P>
+									</p>
 									<ArrowRightIcon className="text-fd-muted-foreground w-4 h-4" />
 								</div>
 							</div>
 						</div>
 					</div>
 
-					<div className="absolute bottom-10 left-10 z-20">
+					<div className="absolute bottom-10 left-10 z-20 w-full max-w-[80%]">
 						<P className="text-fd-muted-foreground">{description}</P>
 					</div>
 				</article>
