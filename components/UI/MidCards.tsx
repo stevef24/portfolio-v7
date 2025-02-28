@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/card";
 import { AuthorDisplay } from "@/components/AuthorsDisplay";
 import { ArrowRightIcon } from "lucide-react";
-import { Button } from "./button";
+import { Button } from "@/components/ui/button";
 
 interface MidCardProps {
 	title: string;
