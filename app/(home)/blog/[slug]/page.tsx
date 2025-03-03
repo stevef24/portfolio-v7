@@ -16,8 +16,8 @@ export default async function Page(props: {
 
 	return (
 		<>
-			<header>
-				<div className="container py-12  rounded-xl md:px-8">
+			<header className="mt-1">
+				<div className="container py-12  rounded-xl md:px-8 bg-[url('/images/bg.png')] bg-cover bg-center">
 					<h1 className="mb-2 text-3xl font-bold">{page.data.title}</h1>
 					<p className="mb-4 text-fd-muted-foreground">
 						{page.data.description}
@@ -29,7 +29,7 @@ export default async function Page(props: {
 			</header>
 			<article className="max-w-3xl mx-auto container flex flex-col px-4 py-8">
 				<div className="min-w-0 prose">
-					<InlineTOC items={page.data.toc} />
+					<InlineTOC className="mb-10" items={page.data.toc} />
 					<Mdx components={customComponents} />
 				</div>
 			</article>
