@@ -48,7 +48,7 @@ export default function BlogCard({
 						<div className="flex items-center justify-between">
 							<H4>{title}</H4>
 							<div className="z-20 items-center gap-2 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-200">
-								<div className="flex items-center gap-1">
+								<div className="flex items-center gap-1 hover:cursor-pointer">
 									<p className="hidden md:block text-center text-md text-fd-muted-foreground">
 										Read more
 									</p>
