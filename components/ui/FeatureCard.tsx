@@ -53,7 +53,7 @@ export function FeatureCard({
 						variant="link"
 						className="text-muted-foreground opacity-0 group-hover:opacity-100 transition-all duration-300"
 					>
-						<span className="flex items-center gap-2">
+						<span className="flex items-center gap-2 hover:cursor-pointer">
 							Read more
 							<ArrowRightIcon className="w-4 h-4" />
 						</span>
