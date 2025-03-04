@@ -3,6 +3,7 @@ import { RootProvider } from "fumadocs-ui/provider";
 import localFont from "next/font/local";
 import { Poppins } from "next/font/google";
 import type { ReactNode } from "react";
+import { Metadata } from "next";
 
 const DM_Sans = localFont({
 	src: "../public/fonts/DMSerifDisplay-Regular.ttf",
@@ -14,6 +15,17 @@ const poppins = Poppins({
 	variable: "--font-poppins",
 	display: "swap",
 });
+
+export const metadata: Metadata = {
+	viewport: "width=device-width, initial-scale=1, maximum-scale=1",
+	appleWebApp: {
+		capable: true,
+		statusBarStyle: "black-translucent",
+	},
+	other: {
+		"apple-mobile-web-app-capable": "yes",
+	},
+};
 
 export default function Layout({ children }: { children: ReactNode }) {
 	return (
