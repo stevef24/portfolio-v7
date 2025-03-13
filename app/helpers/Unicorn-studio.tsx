@@ -32,6 +32,8 @@ export default function UnicornScene({
 	const sceneRef = useRef<any>(null);
 	const [error, setError] = useState<string | null>(null);
 	const [scriptLoaded, setScriptLoaded] = useState(false);
+	// Add a key to force remounting when navigating back
+	const [mountKey, setMountKey] = useState(Date.now());
 	// Add a mount state to track when component mounts/unmounts
 	const mountedRef = useRef(false);
 
@@ -68,6 +70,30 @@ export default function UnicornScene({
 			}
 		});
 	};
+
+	// Add effect to detect visibility changes
+	useEffect(() => {
+		const handleVisibilityChange = () => {
+			if (document.visibilityState === "visible") {
+				// Force remount when tab becomes visible again
+				setMountKey(Date.now());
+			}
+		};
+
+		document.addEventListener("visibilitychange", handleVisibilityChange);
+
+		// This will detect when the user navigates back to this page
+		window.addEventListener("focus", () => {
+			setMountKey(Date.now());
+		});
+
+		return () => {
+			document.removeEventListener("visibilitychange", handleVisibilityChange);
+			window.removeEventListener("focus", () => {
+				setMountKey(Date.now());
+			});
+		};
+	}, []);
 
 	useEffect(() => {
 		if (typeof window === "undefined") return;
@@ -141,7 +167,7 @@ export default function UnicornScene({
 				sceneRef.current = null;
 			}
 		};
-	}, [scriptLoaded, projectId, scale, dpi]);
+	}, [scriptLoaded, projectId, scale, dpi, mountKey]);
 
 	// Effect to handle projectId changes
 	useEffect(() => {
@@ -152,6 +178,7 @@ export default function UnicornScene({
 
 	return (
 		<div
+			key={`unicorn-scene-${projectId}-${mountKey}`}
 			ref={elementRef}
 			style={{
 				width: typeof width === "number" ? `${width}px` : width,
