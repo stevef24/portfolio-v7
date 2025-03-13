@@ -24,7 +24,9 @@ const Contact = () => {
 						className="hover:bg-muted-foreground/10"
 					>
 						<Link
-							href="mailto:your-email@example.com"
+							href={`mailto:${atob(
+								"c3RldmVmZXJuYW5kZXMyNDEwQGdtYWlsLmNvbQ=="
+							)}`}
 							target="_blank"
 							rel="noopener noreferrer"
 						>

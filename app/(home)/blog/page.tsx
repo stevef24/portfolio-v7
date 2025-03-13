@@ -9,7 +9,6 @@ export default function Home() {
 	const posts = blog.getPages();
 	const [featured, ...otherPosts] = posts;
 	const [secondPost, thirdPost, ...remainingPosts] = otherPosts;
-	console.log(featured);
 
 	return (
 		<main className="grow container mx-auto px-4 py-8">
