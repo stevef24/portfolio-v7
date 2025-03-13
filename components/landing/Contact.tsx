@@ -1,3 +1,5 @@
+"use client";
+
 import PageHeader from "./PageHeader";
 import Link from "next/link";
 import { Mail, Linkedin } from "lucide-react";

@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import PageHeader from "./PageHeader";
 import BlogCard from "../ui/BlogCard";
